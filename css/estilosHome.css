@@ -84,6 +84,30 @@ main.wrapper .titular span {
     font-weight: lighter;
 }
 
+/* ----- ANIMACIÓN DE ENTRADA ----- */
+
+main.wrapper .titular {
+    animation-name: texto;
+    animation-duration: 4s;
+    animation-iteration-count: ease-in;
+}
+
+@keyframes texto {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+main.wrapper .botonEntrar {
+    animation-name: botoni;
+    animation-duration: 2s;
+    animation-iteration-count: ease-in;
+}
+
+@keyframes botoni {
+    0% {translate:0% 100%;}
+    100% {translate: 0% 0%;}
+}
+
 main .botonEntrar {
     margin: 30px;
     background: #0f0f0f;
@@ -100,4 +124,49 @@ text-decoration: none;
 
 main .botonEntrar:hover {
       background: #3f3f3f;
+}
+
+
+/* ----- KEYFRAMES -----  */
+
+@media screen and (max-width: 960px) and (min-width: 768px) {
+    main.wrapper {
+        margin: 20px;
+    }
+    
+    main.wrapper h1.titular {
+        font-size: 5vw;
+    }
+
+    main .botonEntrar {
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+    main.wrapper {
+        margin: 10px;
+    }
+
+    main.wrapper h1.titular {
+        font-size: 5vw;
+    }
+
+    main .botonEntrar {
+        padding: 5px 10px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    main.wrapper {
+        margin: 5px;
+    }
+
+    main.wrapper h1.titular {
+        font-size: 5.2vw;
+    }
+
+    main .botonEntrar {
+        padding: 5px 10px;
+    }
 }
