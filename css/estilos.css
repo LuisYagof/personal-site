@@ -120,30 +120,41 @@ main.wrapper {
     margin-bottom: 3%;
 }
 
+
+main.wrapper h3 {
+    font-size: x-large;
+    text-align: center;
+    margin: 2em;
+}
+
+
+/* ----- MAIN INTRO ----- */
+
 section.intro {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-section .presentacion{
+section .presentacion {
     width: 100%;
     padding: 5%;
 }
 
-section.intro .presentacion p span {
+section.intro .presentacion h2 {
+    font-size: 2vw;
+    line-height: 1.3;
+    font-weight: lighter;
+}
+
+section.intro .presentacion h2 span {
     font-size: 3vw;
     font-weight: bold;
 }
 
-section.intro .presentacion p {
-    font-size: 2vw;
-    line-height: 1.3;
-}
-
 /* ----- ANIMACIONES DE ENTRADA ----- */
 
-main.wrapper .intro .presentacion p {
+main.wrapper .intro .presentacion h2 {
     animation-name: aparicion;
     animation-duration: 5s;
     animation-iteration-count: ease-in;
@@ -165,17 +176,14 @@ main.wrapper .intro .laptop img {
     100% {translate: 0% 0%;}
 }
 
-
-main.wrapper h3 {
-    font-size: x-large;
-    text-align: center;
-    margin: 2em;
-}
+/* ----- MAIN BIO ----- */
 
 .wrapper .bio p {
-    font-size: large;
+    font-size: 1.2em;
     line-height: 1.4;
 }
+
+/* ----- MAIN CONTACTO ----- */
 
 main section.contacto {
     display: flex;
@@ -189,12 +197,9 @@ main section .botonContacto {
     border: none;
     border-radius: 10px;
     padding: 15px 40px;
-}
-
-main section .botonContacto a {
-color: #fff;
-font: "Roboto Mono";
-text-decoration: none;
+    color: #fff;
+    font: "Roboto Mono";
+    text-decoration: none;
 }
 
 main section .botonContacto:hover {
@@ -204,6 +209,7 @@ main section .botonContacto:hover {
 /* ----- FOOTER ----- */
 
 footer {
+    border-top: hsla(180, 25%, 25%, 0.205) solid 1px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -221,6 +227,7 @@ footer p {
         width: 40vw;
     }
 
-    .wrapper .bio p {
+    .wrapper .intro h2 {
         font-size: 1.7vw;
+    }
 }

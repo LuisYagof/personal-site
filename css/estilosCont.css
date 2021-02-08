@@ -93,6 +93,16 @@ header .cabecera a.logo {
     border: solid 4px darkslategrey;
 }
 
+.menu-item:not(:first-child) {
+    margin-left: 1.2em;
+}
+
+a.menu-item:hover {
+    border-bottom: 2px solid darkslategrey; 
+}
+
+/* ----- ANIMACIÓN LOGO ----- */
+
 header .cabecera a.logo:hover {
     animation: logot 1s;
 }
@@ -103,15 +113,6 @@ header .cabecera a.logo:hover {
     66% {rotate: 10deg;}
     100% {rotate: 0deg;}
 }
-
-.menu-item:not(:first-child) {
-    margin-left: 1.2em;
-}
-
-a.menu-item:hover {
-    border-bottom: 2px solid darkslategrey; 
-}
-
 
 /* ----- CONTACTO -----*/
 
@@ -173,6 +174,7 @@ form.formulario .botonForm:hover {
 /* ----- FOOTER ----- */
 
 footer {
+    border-top: hsla(180, 25%, 25%, 0.205) solid 1px;
     width: 100%;
     display: flex;
     align-items: center;
