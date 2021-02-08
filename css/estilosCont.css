@@ -222,7 +222,7 @@ footer p {
 
 @media screen and (max-width: 479px) {
     header .cabecera  {
-        width:85%;
+        width:90%;
     }
 
     .boxContact h3.title {
@@ -240,7 +240,7 @@ footer p {
     }
 
     header .cabecera .menu {
-        font-size: 2vw;
+        font-size: 3vw;
     }
 
     footer {
