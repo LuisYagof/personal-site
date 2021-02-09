@@ -57,7 +57,6 @@ table {
 body {
     border: solid 12px darkslategray;
     margin: 0;
-    /* padding: 100px; */
     height: 100vh;
     display: flex;
     align-items: center;
@@ -70,7 +69,6 @@ main.wrapper {
     margin: 30px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
 }
 

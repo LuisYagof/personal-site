@@ -57,7 +57,6 @@ table {
 body {
     border: solid 12px darkslategray;
     margin: 0;
-    /* padding: 100px; */
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -115,11 +114,6 @@ header .cabecera a.logo:hover {
 }
 
 /* ----- CONTACTO -----*/
-
-/* .wrapperCont{
-    display:flex;
-    flex-direction: column;
-} */
 
 h3.title {
     font-size: x-large;
