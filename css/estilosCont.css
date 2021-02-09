@@ -121,10 +121,14 @@ header .cabecera a.logo:hover {
     flex-direction: column;
 } */
 
-.boxContact h3.title {
+h3.title {
     font-size: x-large;
     margin: 1em;
     text-align: center;
+}
+
+section.links h3 {
+    margin-top: 1em;
 }
 
 form.formulario {
@@ -172,10 +176,23 @@ form.formulario .botonForm:hover {
         background: #3f3f3f;
 }
 
+/* ----- LINKS ----- */
+
+section.links {
+    display: flex;
+    flex-direction: column;
+}
+
+section.links .cajaLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 /* ----- FOOTER ----- */
 
 footer {
-    border-top: hsla(180, 25%, 25%, 0.205) solid 1px;
+    /* border-top: hsla(180, 25%, 25%, 0.205) solid 1px; */
     width: 100%;
     display: flex;
     align-items: center;
@@ -189,8 +206,16 @@ footer p {
 /* ----- MEDIA QUERIES ----- */
 
 @media screen and (max-width:960px) and (min-width: 768px) {
+    header .cabecera .menu {
+        font-size: 2vw;
+    } 
+    
     form.formulario {
     margin: 1%;
+    }
+
+    section.boxContact .formulario .botonForm{
+        padding: 10px 20px;
     }
 
     form.formulario input[type="text"],
@@ -198,13 +223,13 @@ footer p {
       width: 100%;
       margin-bottom: 15px;
     }
-
-    header .cabecera .menu {
-        font-size: 2vw;
-    } 
 }
 
 @media screen and (max-width:767px) and (min-width: 480px) {
+    header .cabecera .menu {
+        font-size: 2vw;
+    }
+    
     form.formulario {
         margin: 1%;
     }
@@ -214,10 +239,10 @@ footer p {
       width: 100%;
       margin-bottom: 15px;
     }
-
-    header .cabecera .menu {
-        font-size: 2vw;
-    } 
+    
+    section.boxContact .formulario .botonForm{
+        padding: 5px 10px;
+    }
 }
 
 @media screen and (max-width: 479px) {
@@ -225,7 +250,11 @@ footer p {
         width:95%;
     }
 
-    .boxContact h3.title {
+    header .cabecera .menu {
+        font-size: 3vw;
+    }
+
+    h3.title {
         margin: 0 0 1em 0;
     }
     
@@ -239,8 +268,8 @@ footer p {
       margin-bottom: 15px;
     }
 
-    header .cabecera .menu {
-        font-size: 3vw;
+    section.boxContact .formulario .botonForm{
+        padding: 5px 10px;
     }
 
     footer {
@@ -249,5 +278,6 @@ footer p {
 
     footer p {
         font-size: 3vw;
+        margin-top: 5%;
     }
 }

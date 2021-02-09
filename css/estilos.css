@@ -211,7 +211,7 @@ main section .botonContacto:hover {
 /* ----- FOOTER ----- */
 
 footer {
-    border-top: hsla(180, 25%, 25%, 0.205) solid 1px;
+    /* border-top: hsla(180, 25%, 25%, 0.205) solid 1px; */
     width: 100%;
     display: flex;
     align-items: center;
