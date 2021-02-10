@@ -54,7 +54,7 @@ table {
     box-sizing: border-box;
 }
 
-body {
+.superCajaBio {
     border: solid 12px darkslategray;
     margin: 0;
     display: flex;
@@ -112,16 +112,16 @@ a.menu-item:hover {
 
 /* ----- MAIN ----- */
 
-main.wrapper {
+main.wrapperBio {
     width: 80%;
 }
 
-.wrapper section {
+.wrapperBio section {
     margin-bottom: 3%;
 }
 
 
-main.wrapper h3 {
+main.wrapperBio h3 {
     font-size: x-large;
     text-align: center;
     margin: 2em;
@@ -136,7 +136,7 @@ section.intro {
     align-items: center;
 }
 
-section .presentacion {
+section.intro .presentacion {
     width: 100%;
     padding: 5%;
 }
@@ -155,7 +155,7 @@ section.intro .presentacion h2 span {
 
 /* ----- ANIMACIONES DE ENTRADA ----- */
 
-main.wrapper .intro .presentacion h2 {
+main.wrapperBio .intro .presentacion h2 {
     animation-name: aparicion;
     animation-duration: 5s;
     animation-iteration-count: ease-in;
@@ -166,7 +166,7 @@ main.wrapper .intro .presentacion h2 {
     100% {opacity: 1;}
 }
 
-main.wrapper .intro .laptop img {
+main.wrapperBio .intro .laptop img {
     animation-name: lap;
     animation-duration: 2s;
     animation-iteration-count: ease-in;
@@ -179,7 +179,7 @@ main.wrapper .intro .laptop img {
 
 /* ----- MAIN BIO ----- */
 
-.wrapper .bio p {
+.wrapperBio .bio p {
     font-size: 1.2em;
     line-height: 1.4;
     text-align: justify;
@@ -187,13 +187,13 @@ main.wrapper .intro .laptop img {
 
 /* ----- MAIN CONTACTO ----- */
 
-main section.contacto {
+main.wrapperBio section.contacto {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-main section .botonContacto {
+main.wrapperBio section .botonContacto {
     background: #0f0f0f;
     border: none;
     border-radius: 10px;
@@ -203,7 +203,7 @@ main section .botonContacto {
     text-decoration: none;
 }
 
-main section .botonContacto:hover {
+main.wrapperBio section .botonContacto:hover {
       background: #3f3f3f;
 }
 
@@ -218,16 +218,17 @@ footer {
 
 footer p {
     margin: 30px;
+    font-size: 12px;
 }
 
 /* ----- MEDIAQUERIES ----- */
 
 @media screen and (max-width: 1200px){
-    .wrapper .intro img {
+    .wrapperBio .intro img {
         width: 40vw;
     }
 
-    .wrapper .intro h2 {
+    .wrapperBio .intro h2 {
         font-size: 1.7vw;
     }
 }
@@ -243,19 +244,19 @@ footer p {
         font-size: 2vw;
     } 
 
-    .wrapper .intro {
+    .wrapperBio .intro {
         flex-direction: column;
     }
 
-    .wrapper .intro .presentacion h2 {
+    .wrapperBio .intro .presentacion h2 {
         font-size: 1.2em;
     }
 
-    .wrapper .intro .presentacion h2 span {
+    .wrapperBio .intro .presentacion h2 span {
         font-size: 1.4em;
     }
 
-    .wrapper .intro img {
+    .wrapperBio .intro img {
         width: 50vw;
     }
 
@@ -270,32 +271,32 @@ footer p {
         font-size: 3vw;
     }
 
-    main.wrapper {
+    main.wrapperBio {
         width: 95%;
     }
 
-    main.wrapper h3 {
+    main.wrapperBio h3 {
         margin: 2em 0px;
     }
 
-    .wrapper .intro {
+    .wrapperBio .intro {
         flex-direction: column;
     }
 
-    .wrapper .intro .presentacion h2 {
+    .wrapperBio .intro .presentacion h2 {
         font-size: 1.2em;
         text-align: center;
     }
 
-    .wrapper .intro .presentacion h2 span {
+    .wrapperBio .intro .presentacion h2 span {
         font-size: 1.4em;
     }
 
-    .wrapper .intro img {
+    .wrapperBio .intro img {
         width: 50vw;
     }
 
-    .wrapper .bio p {
+    .wrapperBio .bio p {
         text-align: center;
     }
 

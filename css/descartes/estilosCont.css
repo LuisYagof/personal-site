@@ -54,7 +54,7 @@ table {
     box-sizing: border-box;
 }
 
-body {
+.superCajaForm {
     border: solid 12px darkslategray;
     margin: 0;
     height: 100vh;
@@ -194,7 +194,6 @@ section.links .cajalinks a img:hover {
 /* ----- FOOTER ----- */
 
 footer {
-    /* border-top: hsla(180, 25%, 25%, 0.205) solid 1px; */
     width: 100%;
     display: flex;
     align-items: center;
@@ -203,12 +202,13 @@ footer {
 
 footer p {
     margin: 30px;
+    font-size: 12px;
 }
 
 /* ----- MEDIA QUERIES ----- */
 
 @media screen and (max-width:960px) and (min-width: 768px) {
-    header .cabecera .menu {
+    header .cabecera .menu a {
         font-size: 2vw;
     } 
     
@@ -228,7 +228,7 @@ footer p {
 }
 
 @media screen and (max-width:767px) and (min-width: 480px) {
-    header .cabecera .menu {
+    header .cabecera .menu a {
         font-size: 2vw;
     }
     
@@ -252,7 +252,7 @@ footer p {
         width:95%;
     }
 
-    header .cabecera .menu {
+    header .cabecera .menu a{
         font-size: 3vw;
     }
 

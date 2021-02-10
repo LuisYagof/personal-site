@@ -54,7 +54,7 @@ table {
     box-sizing: border-box;
 }
 
-body {
+.superCajaWelcome {
     border: solid 12px darkslategray;
     margin: 0;
     height: 100vh;
@@ -65,26 +65,39 @@ body {
 
 /* ----- WRAPPER DEL HOME ----- */
 
-main.wrapper {
-    margin: 30px;
+main.wrapperWelcome {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-main.wrapper .titular {
-    font-size: 50px;
-    margin: 30px;
+main.wrapperWelcome .titular {
     line-height: 1.4;
+    font-size: 6vw;
+    margin-bottom: 8%;
 }
 
-main.wrapper .titular span {
+main.wrapperWelcome .titular span {
     font-weight: lighter;
+}
+
+main.wrapperWelcome .botonEntrar {
+    background: #0f0f0f;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: #fff;
+    font: "Roboto Mono";
+    text-decoration: none;
+}
+
+main.wrapperWelcome .botonEntrar:hover {
+      background: #3f3f3f;
 }
 
 /* ----- ANIMACIÓN DE ENTRADA ----- */
 
-main.wrapper .titular {
+main.wrapperWelcome .titular {
     animation-name: texto;
     animation-duration: 4s;
     animation-iteration-count: ease-in;
@@ -95,7 +108,7 @@ main.wrapper .titular {
     100% {opacity: 1;}
 }
 
-main.wrapper .botonEntrar {
+main.wrapperWelcome .botonEntrar {
     animation-name: botoni;
     animation-duration: 2s;
     animation-iteration-count: ease-in;
@@ -106,62 +119,16 @@ main.wrapper .botonEntrar {
     100% {translate: 0% 0%;}
 }
 
-main .botonEntrar {
-    margin: 30px;
-    background: #0f0f0f;
-    border: none;
-    border-radius: 10px;
-    padding: 15px 40px;
-    color: #fff;
-    font: "Roboto Mono";
-    text-decoration: none;
-}
-
-main .botonEntrar:hover {
-      background: #3f3f3f;
-}
-
-
 /* ----- KEYFRAMES -----  */
 
-@media screen and (max-width: 960px) and (min-width: 768px) {
-    main.wrapper {
-        margin: 20px;
-    }
-    
-    main.wrapper h1.titular {
-        font-size: 5vw;
+@media screen and (min-width: 960px) {
+    main.wrapperWelcome h1.titular {
+        font-size: 50px;
+        margin: 30px;
     }
 
-    main .botonEntrar {
-        padding: 10px 20px;
-    }
-}
+    main.wrapperWelcome .botonEntrar {
+        padding: 15px 40px;
 
-@media screen and (max-width: 769px) and (min-width: 480px) {
-    main.wrapper {
-        margin: 10px;
-    }
-
-    main.wrapper h1.titular {
-        font-size: 5vw;
-    }
-
-    main .botonEntrar {
-        padding: 5px 10px;
-    }
-}
-
-@media screen and (max-width: 479px) {
-    main.wrapper {
-        margin: 5px;
-    }
-
-    main.wrapper h1.titular {
-        font-size: 5.2vw;
-    }
-
-    main .botonEntrar {
-        padding: 5px 10px;
     }
 }
