@@ -107,7 +107,7 @@ header .cabecera a.logo:hover {
 }
 
 a.menu-item:hover {
-    border-bottom: 2px solid darkslategrey; 
+    border-bottom: 4px solid darkslategrey; 
 }
 
 /* ----- MAIN ----- */

@@ -97,7 +97,7 @@ header .cabecera a.logo {
 }
 
 a.menu-item:hover {
-    border-bottom: 2px solid darkslategrey; 
+    border-bottom: 4px solid darkslategrey; 
 }
 
 /* ----- ANIMACIÓN LOGO ----- */
@@ -182,6 +182,14 @@ section.links .cajaLinks {
     flex-direction: row;
     justify-content: space-around;
 }
+
+/* section.links .cajalinks a img {
+    transition: opacity 2s;
+}
+
+section.links .cajalinks a img:hover {
+    opacity: 0.5;
+} */
 
 /* ----- FOOTER ----- */
 
